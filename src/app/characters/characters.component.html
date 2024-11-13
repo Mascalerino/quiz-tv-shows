@@ -5,7 +5,10 @@
       type="text"
       class="form-control w-50"
       placeholder="Buscar personajes..."
+      [(ngModel)]="searchTerm"
+      (input)="searchCharacters()"
     />
+    <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
   </div>
 
   <!-- Filas con las tablas -->
@@ -19,7 +22,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters1A">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -31,7 +44,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters1B">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -43,7 +66,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters2A">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -55,7 +88,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters2B">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -71,7 +114,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters3A">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -83,7 +136,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characters3B">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -95,7 +158,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of charactersAtico">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -107,7 +180,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of charactersVideoclub">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -116,7 +199,6 @@
   <div class="row">
     <!-- Fila 3: 2 tablas -->
     <div class="col-3">
-      <!-- Portería con col-3 sin mb -->
       <table class="table">
         <thead>
           <tr>
@@ -124,12 +206,21 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of charactersPorteria">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
     <div class="col-6">
-      <!-- Otros sin mb -->
       <table class="table">
         <thead>
           <tr>
@@ -137,7 +228,17 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Aquí puedes agregar el contenido de la tabla -->
+          <tr *ngFor="let character of characterOtros">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              {{ character.fullName }}
+              <span *ngIf="character.explanation"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>

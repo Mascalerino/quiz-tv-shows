@@ -11,3 +11,16 @@ th {
   background-color: #f8f9fa;
   text-align: center;
 }
+
+.highlight {
+  animation: highlightEffect 1s ease-in-out; /* Animación de cambio de color */
+}
+
+@keyframes highlightEffect {
+  0% {
+    background-color: #d4edda;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

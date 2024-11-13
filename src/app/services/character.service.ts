@@ -17,23 +17,14 @@ export class CharacterService {
   getTotalCharacters(): number {
     let totalCharacters = 0;
     for (const floor in this.characters) {
-      if (Object.prototype.hasOwnProperty.call(this.characters, floor)) {
+      if (
+        Object.prototype.hasOwnProperty.call(this.characters, floor) &&
+        floor !== 'default'
+      ) {
         totalCharacters += this.characters[floor].length; // Sumar los personajes por piso
       }
     }
     return totalCharacters;
-  }
-
-  // Método para obtener el número de personajes por piso
-  getCharactersByFloor(): { [key: string]: number } {
-    let charactersByFloor: { [key: string]: number } = {};
-
-    for (const floor in this.characters) {
-      if (Object.prototype.hasOwnProperty.call(this.characters, floor)) {
-        charactersByFloor[floor] = this.characters[floor].length; // Número de personajes por piso
-      }
-    }
-    return charactersByFloor;
   }
 
   // Método para obtener los personajes de un piso específico

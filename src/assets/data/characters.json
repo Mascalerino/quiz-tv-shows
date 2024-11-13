@@ -1,0 +1,892 @@
+{
+  "1A": [
+    {
+      "fullName": "Andres Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Andres", "Guerra"]
+    },
+    {
+      "fullName": "Concha de la Fuente",
+      "explanation": "",
+      "posibilyInputs": ["Concha"]
+    },
+    {
+      "fullName": "Isabel Ruiz",
+      "explanation": "",
+      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"]
+    },
+    {
+      "fullName": "Jose Miguel Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Jose", "Cuesta", "Josemi"]
+    },
+    {
+      "fullName": "Juan Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Juan", "Cuesta"]
+    },
+    {
+      "fullName": "Marisa Benito",
+      "explanation": "",
+      "posibilyInputs": ["Marisa", "Benito"]
+    },
+    {
+      "fullName": "Natalia Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Natalia", "Cuesta"]
+    },
+    {
+      "fullName": "Vicenta Benito",
+      "explanation": "",
+      "posibilyInputs": ["Vicenta", "Benito"]
+    }
+  ],
+  "1B": [
+    {
+      "fullName": "Beatriz Villarejo",
+      "explanation": "",
+      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"]
+    },
+    {
+      "fullName": "Diego Alvarez",
+      "explanation": "",
+      "posibilyInputs": ["Diego", "Alvarez"]
+    },
+    {
+      "fullName": "Fernando Navarro",
+      "explanation": "",
+      "posibilyInputs": ["Fernando", "Navarro"]
+    },
+    {
+      "fullName": "Mauricio Hidalgo",
+      "explanation": "",
+      "posibilyInputs": ["Mauricio", "Hidalgo", "Mauri"]
+    },
+    {
+      "fullName": "Antonio-Ezequiel Hidalgo",
+      "explanation": "",
+      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"]
+    }
+  ],
+  "2A": [
+    {
+      "fullName": "Alex Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Alex", "Guerra"]
+    },
+    {
+      "fullName": "Isabel Ruiz",
+      "explanation": "",
+      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"]
+    },
+    {
+      "fullName": "Jose Miguel Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Jose", "Cuesta", "Josemi"]
+    },
+    {
+      "fullName": "Juan Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Juan", "Cuesta"]
+    },
+    {
+      "fullName": "Natalia Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Natalia", "Cuesta"]
+    },
+    {
+      "fullName": "Nieves Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Nieves", "Cuesta", "Chunga"]
+    },
+    {
+      "fullName": "Paloma Hurtado",
+      "explanation": "",
+      "posibilyInputs": ["Paloma", "Hurtado", "Puf"]
+    },
+    {
+      "fullName": "Yago",
+      "explanation": "",
+      "posibilyInputs": ["Yago"]
+    }
+  ],
+  "2B": [
+    {
+      "fullName": "Alex Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Alex", "Guerra"]
+    },
+    {
+      "fullName": "Andres Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Andres", "Guerra"]
+    },
+    {
+      "fullName": "Armando Rubio",
+      "explanation": "",
+      "posibilyInputs": ["Armando", "Rubio"]
+    },
+    {
+      "fullName": "Beatriz Villarejo",
+      "explanation": "",
+      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"]
+    },
+    {
+      "fullName": "Carlos",
+      "explanation": "",
+      "posibilyInputs": ["Carlos"]
+    },
+    {
+      "fullName": "Carmen Villanueva",
+      "explanation": "",
+      "posibilyInputs": ["Carmen", "Villanueva", "Tiesa"]
+    },
+    {
+      "fullName": "Concha de la Fuente",
+      "explanation": "",
+      "posibilyInputs": ["Concha"]
+    },
+    {
+      "fullName": "Higinio Heredia",
+      "explanation": "",
+      "posibilyInputs": ["Higinio", "Heredia"]
+    },
+    {
+      "fullName": "Isabel Ruiz",
+      "explanation": "",
+      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"]
+    },
+    {
+      "fullName": "Jose Miguel Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Jose", "Cuesta", "Josemi"]
+    },
+    {
+      "fullName": "Mamen Garcia",
+      "explanation": "",
+      "posibilyInputs": ["Mamen", "Garcia"]
+    },
+    {
+      "fullName": "Nieves Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Nieves", "Cuesta", "Chunga"]
+    },
+    {
+      "fullName": "Pablo Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Pablo", "Guerra"]
+    },
+    {
+      "fullName": "Roberto Alonso",
+      "explanation": "",
+      "posibilyInputs": ["Roberto", "Alonso", "Pintamonas"]
+    },
+    {
+      "fullName": "Antonio-Ezequiel Hidalgo",
+      "explanation": "",
+      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"]
+    },
+    {
+      "fullName": "Candela Heredia",
+      "explanation": "Hija de higinio",
+      "posibilyInputs": ["Candela", "Heredia"]
+    },
+    {
+      "fullName": "Daniel Rubio",
+      "explanation": "Hijo de armando",
+      "posibilyInputs": ["Daniel", "Rubio"]
+    },
+    {
+      "fullName": "Juan Luis",
+      "explanation": "Cirujano",
+      "posibilyInputs": ["Juan", "Luis"]
+    },
+    {
+      "fullName": "Moncho Heredia",
+      "explanation": "Hijo higinio",
+      "posibilyInputs": ["Moncho", "Heredia"]
+    },
+    {
+      "fullName": "Rafa",
+      "explanation": "Cirujano",
+      "posibilyInputs": ["Rafa"]
+    },
+    {
+      "fullName": "Raquel Garcia",
+      "explanation": "Raul, hermana mamen",
+      "posibilyInputs": ["Raquel", "Garcia"]
+    },
+    {
+      "fullName": "Rebeca Rubio",
+      "explanation": "Hija armando",
+      "posibilyInputs": ["Rebeca", "Rubio"]
+    }
+  ],
+  "3A": [
+    {
+      "fullName": "Alicia Sanz",
+      "explanation": "",
+      "posibilyInputs": ["Alicia", "Sanz"]
+    },
+    {
+      "fullName": "Carlos",
+      "explanation": "",
+      "posibilyInputs": ["Carlos"]
+    },
+    {
+      "fullName": "Isabel Ruiz",
+      "explanation": "",
+      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"]
+    },
+    {
+      "fullName": "Juan Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Juan", "Cuesta"]
+    },
+    {
+      "fullName": "Lucia Alvarez",
+      "explanation": "",
+      "posibilyInputs": ["Lucia", "Alvarez", "Pija"]
+    },
+    {
+      "fullName": "Natalia Cuesta",
+      "explanation": "",
+      "posibilyInputs": ["Natalia", "Cuesta"]
+    },
+    {
+      "fullName": "Rafael Alvarez",
+      "explanation": "",
+      "posibilyInputs": ["Rafael", "Alvarez"]
+    },
+    {
+      "fullName": "Roberto Alonso",
+      "explanation": "",
+      "posibilyInputs": ["Roberto", "Alonso", "Pintamonas"]
+    },
+    {
+      "fullName": "Yago",
+      "explanation": "",
+      "posibilyInputs": ["Yago"]
+    },
+    {
+      "fullName": "Ciriaco Canovas",
+      "explanation": "anterior propietario del 3A",
+      "posibilyInputs": ["Ciriaco", "Canovas"]
+    }
+  ],
+  "3B": [
+    {
+      "fullName": "Alicia Sanz",
+      "explanation": "",
+      "posibilyInputs": ["Alicia", "Sanz"]
+    },
+    {
+      "fullName": "Ana",
+      "explanation": "",
+      "posibilyInputs": ["Ana", "Inga"]
+    },
+    {
+      "fullName": "Beatriz Villarejo",
+      "explanation": "",
+      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"]
+    },
+    {
+      "fullName": "Belen Lopez",
+      "explanation": "",
+      "posibilyInputs": ["Belen", "Lopez"]
+    },
+    {
+      "fullName": "Carmen Villanueva",
+      "explanation": "",
+      "posibilyInputs": ["Carmen", "Villanueva", "Tiesa"]
+    },
+    {
+      "fullName": "Emilio Delgado",
+      "explanation": "",
+      "posibilyInputs": ["Emilio", "Delgado"]
+    },
+    {
+      "fullName": "Maria Jesus Vazquez",
+      "explanation": "",
+      "posibilyInputs": ["Maria", "Jesus", "Vazquez", "Torrijas"]
+    },
+    {
+      "fullName": "Antonio-Ezequiel Hidalgo",
+      "explanation": "",
+      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"]
+    },
+    {
+      "fullName": "Lola",
+      "explanation": "Policia",
+      "posibilyInputs": ["Lola", "Policia"]
+    }
+  ],
+  "atico": [
+    {
+      "fullName": "Alex Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Alex", "Guerra"]
+    },
+    {
+      "fullName": "Andres Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Andres", "Guerra"]
+    },
+    {
+      "fullName": "Pablo Guerra",
+      "explanation": "",
+      "posibilyInputs": ["Pablo", "Guerra"]
+    },
+    {
+      "fullName": "Paco",
+      "explanation": "",
+      "posibilyInputs": ["Paco"]
+    },
+    {
+      "fullName": "Roberto Alonso",
+      "explanation": "",
+      "posibilyInputs": ["Roberto", "Alonso", "Pintamonas"]
+    },
+    {
+      "fullName": "Beltran Amoros",
+      "explanation": "Parapsicologo",
+      "posibilyInputs": ["Beltran", "Amoros", "Parapsicologo"]
+    }
+  ],
+  "videoclub": [
+    {
+      "fullName": "Carlos",
+      "explanation": "",
+      "posibilyInputs": ["Carlos"]
+    },
+    {
+      "fullName": "Paco",
+      "explanation": "",
+      "posibilyInputs": ["Paco"]
+    },
+    {
+      "fullName": "Rafael Alvarez",
+      "explanation": "",
+      "posibilyInputs": ["Rafael", "Alvarez"]
+    }
+  ],
+  "porteria": [
+    {
+      "fullName": "Belen Lopez",
+      "explanation": "",
+      "posibilyInputs": ["Belen", "Lopez"]
+    },
+    {
+      "fullName": "Emilio Delgado",
+      "explanation": "",
+      "posibilyInputs": ["Emilio", "Delgado"]
+    },
+    {
+      "fullName": "Mariano Delgado",
+      "explanation": "",
+      "posibilyInputs": ["Mariano", "Delgado"]
+    },
+    {
+      "fullName": "Amador Carrion",
+      "explanation": "portero",
+      "posibilyInputs": ["Amador", "Carrion"]
+    },
+    {
+      "fullName": "Nemesio",
+      "explanation": "Antiguo Portero",
+      "posibilyInputs": ["Nemesio", "Escondite"]
+    }
+  ],
+  "otros": [
+    {
+      "fullName": "Abel",
+      "explanation": "Novio Diego",
+      "posibilyInputs": ["Abel"]
+    },
+    {
+      "fullName": "Adriana",
+      "explanation": "Alumna Juan Cuesta",
+      "posibilyInputs": ["Adriana"]
+    },
+    {
+      "fullName": "Agustin",
+      "explanation": "Companero fernando",
+      "posibilyInputs": ["Agustin"]
+    },
+    {
+      "fullName": "Alba",
+      "explanation": "Ex-mujer diego",
+      "posibilyInputs": ["Alba"]
+    },
+    {
+      "fullName": "Alfonso",
+      "explanation": "Sobrino Padre paulino",
+      "posibilyInputs": ["Alfonso"]
+    },
+    {
+      "fullName": "Alfonso Iglesias",
+      "explanation": "periodista huelga de hambre",
+      "posibilyInputs": ["Alfonso", "Iglesias"]
+    },
+    {
+      "fullName": "Amancio",
+      "explanation": "Companero residencia marisa concha",
+      "posibilyInputs": ["Amancio"]
+    },
+    {
+      "fullName": "Amparo",
+      "explanation": "abuela roberto",
+      "posibilyInputs": ["Amparo"]
+    },
+    {
+      "fullName": "Ana",
+      "explanation": "Pareja Informatico Jaime",
+      "posibilyInputs": ["Ana"]
+    },
+    {
+      "fullName": "Andreu",
+      "explanation": "Director cine para adultos",
+      "posibilyInputs": ["Andreu"]
+    },
+    {
+      "fullName": "Angeles",
+      "explanation": "cacatua",
+      "posibilyInputs": ["Angeles", "Cacatua"]
+    },
+    {
+      "fullName": "Antonia Martin",
+      "explanation": "madre emilio",
+      "posibilyInputs": ["Antonia", "Martin"]
+    },
+    {
+      "fullName": "Antonio",
+      "explanation": "Capataz obra",
+      "posibilyInputs": ["Antonio"]
+    },
+    {
+      "fullName": "Antonio Rubio Cortes",
+      "explanation": "marido de concha",
+      "posibilyInputs": ["Antonio", "Rubio", "Cortes"]
+    },
+    {
+      "fullName": "Antonio alonso",
+      "explanation": "padre roberto",
+      "posibilyInputs": ["Antonio", "alonso"]
+    },
+    {
+      "fullName": "Arantxa",
+      "explanation": "Companera uni emilio",
+      "posibilyInputs": ["Arantxa"]
+    },
+    {
+      "fullName": "Arsenio Hurtado",
+      "explanation": "padre paloma",
+      "posibilyInputs": ["Arsenio", "Hurtado"]
+    },
+    {
+      "fullName": "Arturo Lopez",
+      "explanation": "padre de belen",
+      "posibilyInputs": ["Arturo", "Lopez"]
+    },
+    {
+      "fullName": "Barbara",
+      "explanation": "Anuncio Choco fibra",
+      "posibilyInputs": ["Barbara"]
+    },
+    {
+      "fullName": "Beatriz",
+      "explanation": "Ex de armando",
+      "posibilyInputs": ["Beatriz"]
+    },
+    {
+      "fullName": "Benigno Lopera",
+      "explanation": "ex de carmen",
+      "posibilyInputs": ["Benigno", "Lopera", "Beni"]
+    },
+    {
+      "fullName": "Brama Michael",
+      "explanation": "",
+      "posibilyInputs": ["Brama", "Michael"]
+    },
+    {
+      "fullName": "Bruno",
+      "explanation": "Cita belen",
+      "posibilyInputs": ["Bruno"]
+    },
+    {
+      "fullName": "Carla",
+      "explanation": "amiga de isabel",
+      "posibilyInputs": ["Carla"]
+    },
+    {
+      "fullName": "Chelo",
+      "explanation": "Secretaria Pedro Penafiel",
+      "posibilyInputs": ["Chelo"]
+    },
+    {
+      "fullName": "Chinua",
+      "explanation": "Esposa Yakubu",
+      "posibilyInputs": ["Chinua"]
+    },
+    {
+      "fullName": "Clara Alvarez",
+      "explanation": "hermana de lucia",
+      "posibilyInputs": ["Clara", "Alvarez"]
+    },
+    {
+      "fullName": "Concejal Galvez",
+      "explanation": "Concejal de urbanismo",
+      "posibilyInputs": ["Concejal", "Galvez"]
+    },
+    {
+      "fullName": "Consuelo Garcia",
+      "explanation": "madre isabel",
+      "posibilyInputs": ["Consuelo", "Garcia"]
+    },
+    {
+      "fullName": "Coronel Treviño",
+      "explanation": "Padre maria yakubu",
+      "posibilyInputs": ["Coronel", "Trevino"]
+    },
+    {
+      "fullName": "Daniel",
+      "explanation": "Director supermercado",
+      "posibilyInputs": ["Daniel"]
+    },
+    {
+      "fullName": "David",
+      "explanation": "gigolo",
+      "posibilyInputs": ["David"]
+    },
+    {
+      "fullName": "Don Bartolome Mendez Zuloaga",
+      "explanation": "Maestro y mentor",
+      "posibilyInputs": ["Bartolome", "Mendez", "Zuloaga", "Maestro", "Mentor"]
+    },
+    {
+      "fullName": "Don Gustavo",
+      "explanation": "Director del colegio",
+      "posibilyInputs": ["Gustavo"]
+    },
+    {
+      "fullName": "Don Ramon",
+      "explanation": "Jefe bufete abogados",
+      "posibilyInputs": ["Ramon"]
+    },
+    {
+      "fullName": "El Jupa",
+      "explanation": "Nino adopatado mauri",
+      "posibilyInputs": ["Jupa"]
+    },
+    {
+      "fullName": "Enrique Navarro",
+      "explanation": "padre fernando",
+      "posibilyInputs": ["Enrique", "Navarro"]
+    },
+    {
+      "fullName": "Estibaliz",
+      "explanation": "Conocida Jose maria",
+      "posibilyInputs": ["Estibaliz"]
+    },
+    {
+      "fullName": "Fabian",
+      "explanation": "Guardia colegio",
+      "posibilyInputs": ["Fabian"]
+    },
+    {
+      "fullName": "Farineli",
+      "explanation": "perro Mariano",
+      "posibilyInputs": ["Farineli"]
+    },
+    {
+      "fullName": "Federico",
+      "explanation": "banquero",
+      "posibilyInputs": ["Federico", "Banquero"]
+    },
+    {
+      "fullName": "Fidel",
+      "explanation": "abuelo bea",
+      "posibilyInputs": ["Fidel"]
+    },
+    {
+      "fullName": "Gerardo del Campo",
+      "explanation": "el que habla rapido",
+      "posibilyInputs": ["Gerardo", "Campo", "Calvo", "Rapido"]
+    },
+    {
+      "fullName": "Gregorio Navarro",
+      "explanation": "administrador",
+      "posibilyInputs": ["Gregorio", "Navarro", "Gregor"]
+    },
+    {
+      "fullName": "Guillermo",
+      "explanation": "Homofobo",
+      "posibilyInputs": ["Guillermo"]
+    },
+    {
+      "fullName": "Haroslav",
+      "explanation": "Padre alex",
+      "posibilyInputs": ["Haroslav"]
+    },
+    {
+      "fullName": "Hermana Esperanza",
+      "explanation": "",
+      "posibilyInputs": ["Hermana", "Esperanza"]
+    },
+    {
+      "fullName": "Hugo",
+      "explanation": "Padre de alquiler",
+      "posibilyInputs": ["Hugo"]
+    },
+    {
+      "fullName": "Ines",
+      "explanation": "Ex-novia bea",
+      "posibilyInputs": ["Ines"]
+    },
+    {
+      "fullName": "Isabel Muñoz",
+      "explanation": "Ex-mujer rafael",
+      "posibilyInputs": ["Isabel", "Muñoz"]
+    },
+    {
+      "fullName": "Jaime",
+      "explanation": "Informatico mauri",
+      "posibilyInputs": ["Jaime", "Cookies"]
+    },
+    {
+      "fullName": "Jose Antonio Bellesteros",
+      "explanation": "padre lourdes",
+      "posibilyInputs": ["Jose", "Antonio", "Bellesteros"]
+    },
+    {
+      "fullName": "Joselito",
+      "explanation": "canario",
+      "posibilyInputs": ["Joselito", "Canario"]
+    },
+    {
+      "fullName": "Jose Maria",
+      "explanation": "El Yonki",
+      "posibilyInputs": ["Jose", "Maria"]
+    },
+    {
+      "fullName": "Juanjo Penafiel",
+      "explanation": "Hijo Pedro Penafiel",
+      "posibilyInputs": ["Juanjo", "Peñafiel"]
+    },
+    {
+      "fullName": "Julian",
+      "explanation": "Amigo mauri",
+      "posibilyInputs": ["Julian"]
+    },
+    {
+      "fullName": "Justiniana",
+      "explanation": "Abuela bea",
+      "posibilyInputs": ["Justiniana", "Justi"]
+    },
+    {
+      "fullName": "Kevin",
+      "explanation": "Niño encontrado",
+      "posibilyInputs": ["Kevin"]
+    },
+    {
+      "fullName": "La tia Choni",
+      "explanation": "Tia Jose maria",
+      "posibilyInputs": ["Choni"]
+    },
+    {
+      "fullName": "Leonor Torres",
+      "explanation": "Madre Mauri",
+      "posibilyInputs": ["Leonor", "Torres"]
+    },
+    {
+      "fullName": "Lourdes",
+      "explanation": "Novia paco",
+      "posibilyInputs": ["Lourdes"]
+    },
+    {
+      "fullName": "Manolo",
+      "explanation": "Ex/marido Marisa",
+      "posibilyInputs": ["Manolo"]
+    },
+    {
+      "fullName": "Marcelo Sanguinetti",
+      "explanation": "Terapueta",
+      "posibilyInputs": ["Marcelo", "Sanguinetti", "Terapeuta"]
+    },
+    {
+      "fullName": "Maria Treviño",
+      "explanation": "amante yakubu",
+      "posibilyInputs": ["Maria", "Treviño"]
+    },
+    {
+      "fullName": "Mark Jeremy",
+      "explanation": "actor porno",
+      "posibilyInputs": ["Mark", "Jeremy"]
+    },
+    {
+      "fullName": "Marta Puig",
+      "explanation": "Pantumaca",
+      "posibilyInputs": ["Marta", "Puig", "Pantumaca"]
+    },
+    {
+      "fullName": "Mehmet",
+      "explanation": "esposo albanes natalia",
+      "posibilyInputs": ["Mehmet"]
+    },
+    {
+      "fullName": "Menchu",
+      "explanation": "Amante mariano",
+      "posibilyInputs": ["Menchu"]
+    },
+    {
+      "fullName": "Miguel Angel Sanchez",
+      "explanation": "Abogado Juan-Isabel",
+      "posibilyInputs": ["Miguel", "Angel", "Sanchez"]
+    },
+    {
+      "fullName": "Moises",
+      "explanation": "Mayordomo Rafael",
+      "posibilyInputs": ["Moises", "Mayordomo"]
+    },
+    {
+      "fullName": "Mojito",
+      "explanation": "perro",
+      "posibilyInputs": ["Mojito"]
+    },
+    {
+      "fullName": "Montse Sanchez",
+      "explanation": "madre fernando",
+      "posibilyInputs": ["Montse", "Sanchez"]
+    },
+    {
+      "fullName": "Nacho Martin",
+      "explanation": "Cuidador señoras",
+      "posibilyInputs": ["Nacho", "Martin"]
+    },
+    {
+      "fullName": "Noriyuki",
+      "explanation": "Traductor",
+      "posibilyInputs": ["Noriyuki", "Traductor"]
+    },
+    {
+      "fullName": "Nuria",
+      "explanation": "Ex de roberto",
+      "posibilyInputs": ["Nuria"]
+    },
+    {
+      "fullName": "Paca",
+      "explanation": "sirvienta padres carmen",
+      "posibilyInputs": ["Paca"]
+    },
+    {
+      "fullName": "Padre Miguel",
+      "explanation": "Cura",
+      "posibilyInputs": ["Padre", "Miguel", "Cura"]
+    },
+    {
+      "fullName": "Padre Paulino",
+      "explanation": "Director colegio",
+      "posibilyInputs": ["Padre", "Paulino", "Director"]
+    },
+    {
+      "fullName": "Paqui",
+      "explanation": "Limpiadora",
+      "posibilyInputs": ["Paqui"]
+    },
+    {
+      "fullName": "Pedro Penafiel",
+      "explanation": "Ex/marido belen",
+      "posibilyInputs": ["Pedro", "Penafiel"]
+    },
+    {
+      "fullName": "Ramiro Villanueva",
+      "explanation": "Padre de carmen",
+      "posibilyInputs": ["Ramiro", "Villanueva"]
+    },
+    {
+      "fullName": "Ramon",
+      "explanation": "Amante paloma",
+      "posibilyInputs": ["Ramon"]
+    },
+    {
+      "fullName": "Raul",
+      "explanation": "Companero uni mauri",
+      "posibilyInputs": ["Raul"]
+    },
+    {
+      "fullName": "Rocio",
+      "explanation": "Cartera",
+      "posibilyInputs": ["Rocio", "Cartera"]
+    },
+    {
+      "fullName": "Rosa Izquierdo",
+      "explanation": "Novia bea",
+      "posibilyInputs": ["Rosa", "Izquierdo"]
+    },
+    {
+      "fullName": "Salva",
+      "explanation": "hermano bea",
+      "posibilyInputs": ["Salva"]
+    },
+    {
+      "fullName": "Santiago Segura",
+      "explanation": "",
+      "posibilyInputs": ["Santiago", "segura", "Parlita"]
+    },
+    {
+      "fullName": "Sauron",
+      "explanation": "perro mauri",
+      "posibilyInputs": ["Sauron"]
+    },
+    {
+      "fullName": "Señorita Marga",
+      "explanation": "Ex profesora de mauri",
+      "posibilyInputs": ["Señorita", "Marga"]
+    },
+    {
+      "fullName": "Sonia",
+      "explanation": "Amiga bea",
+      "posibilyInputs": ["Sonia"]
+    },
+    {
+      "fullName": "Teresa Castillo",
+      "explanation": "madre de roberto",
+      "posibilyInputs": ["Teresa", "Castillo"]
+    },
+    {
+      "fullName": "Toni",
+      "explanation": "madre paloma",
+      "posibilyInputs": ["Toni"]
+    },
+    {
+      "fullName": "Valentin",
+      "explanation": "perro vicenta",
+      "posibilyInputs": ["Valentin"]
+    },
+    {
+      "fullName": "Versace",
+      "explanation": "conejo mauri",
+      "posibilyInputs": ["Versace"]
+    },
+    {
+      "fullName": "Victoria Pena",
+      "explanation": "madre alicia",
+      "posibilyInputs": ["Victoria", "Pena"]
+    },
+    {
+      "fullName": "Yakubu",
+      "explanation": "nigeriano",
+      "posibilyInputs": ["Yakubu"]
+    },
+    {
+      "fullName": "Yamiley Cuesta",
+      "explanation": "Hija natalia",
+      "posibilyInputs": ["Yamiley", "Cuesta"]
+    },
+    {
+      "fullName": "Yolanda-Pedro",
+      "explanation": "amigo mauri",
+      "posibilyInputs": ["Yolanda", "Pedro"]
+    }
+  ]
+}

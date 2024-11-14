@@ -10,17 +10,6 @@
         (input)="searchCharacters()"
       />
       <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
-
-      <!-- Botón de reinicio del quiz -->
-      <!-- Botón de reinicio del quiz -->
-      <button
-        class="btn btn-outline-secondary ms-3"
-        title="Reiniciar quiz"
-        (click)="resetQuiz()"
-      >
-        <i class="fas fa-sync-alt"></i>
-        <!-- Ícono de reinicio -->
-      </button>
     </div>
   </div>
 
@@ -40,8 +29,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -49,6 +38,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled1B }">
         <thead>
@@ -62,8 +52,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -71,6 +61,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled2A }">
         <thead>
@@ -84,8 +75,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -93,6 +84,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled2B }">
         <thead>
@@ -106,8 +98,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -132,8 +124,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -141,6 +133,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled3B }">
         <thead>
@@ -154,8 +147,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -163,6 +156,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilledAtico }">
         <thead>
@@ -176,8 +170,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -185,6 +179,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilledVideoclub }">
         <thead>
@@ -198,8 +193,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -224,8 +219,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>
@@ -233,6 +228,7 @@
         </tbody>
       </table>
     </div>
+
     <div class="col-6">
       <table class="table" [ngClass]="{ 'table-success': isFilledOtros }">
         <thead>
@@ -246,8 +242,8 @@
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
             >
-              {{ character.fullName }}
-              <span *ngIf="character.explanation"
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
                 >({{ character.explanation }})</span
               >
             </td>

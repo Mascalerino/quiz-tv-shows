@@ -16,13 +16,13 @@ export class CharactersComponent implements OnInit {
   characters1A: ICharacter[] = [];
   characters1B: ICharacter[] = [];
   characters2A: ICharacter[] = [];
-  characters2B: ICharacter[] = [];
+  characters2B: ICharacter[] = []; // Ya no dividimos en columnas, esta es una sola lista
   characters3A: ICharacter[] = [];
   characters3B: ICharacter[] = [];
   charactersAtico: ICharacter[] = [];
   charactersPorteria: ICharacter[] = [];
   charactersVideoclub: ICharacter[] = [];
-  characterOtros: ICharacter[] = [];
+  characterOtros: ICharacter[] = []; // Igual para "Otros", es una sola lista
 
   // Propiedades para saber si la tabla está llena
   isFilled1A: boolean = false;
@@ -43,6 +43,45 @@ export class CharactersComponent implements OnInit {
   ngOnInit(): void {
     this.totalCharacters = this.characterService.getTotalCharacters();
     this.getCharactersByFloor();
+  }
+
+  // Método para obtener los personajes por piso y ordenarlos alfabéticamente
+  private getCharactersByFloor(): void {
+    this.characters1A = this.characterService.getCharactersByFloorName('1A');
+    this.characters1B = this.characterService.getCharactersByFloorName('1B');
+    this.characters2A = this.characterService.getCharactersByFloorName('2A');
+    this.characters2B = this.characterService.getCharactersByFloorName('2B'); // Ya no se divide
+    this.characters3A = this.characterService.getCharactersByFloorName('3A');
+    this.characters3B = this.characterService.getCharactersByFloorName('3B');
+    this.charactersAtico =
+      this.characterService.getCharactersByFloorName('Atico');
+    this.charactersPorteria =
+      this.characterService.getCharactersByFloorName('Porteria');
+    this.charactersVideoclub =
+      this.characterService.getCharactersByFloorName('Videoclub');
+    this.characterOtros =
+      this.characterService.getCharactersByFloorName('Otros'); // Igual para "Otros"
+
+    // Ordenar alfabéticamente por `fullName`
+    this.sortCharactersByFullName();
+  }
+
+  // Método para ordenar los personajes alfabéticamente
+  private sortCharactersByFullName(): void {
+    this.characters1A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters1B.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters2A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters2B.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Esta ya no se divide
+    this.characters3A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters3B.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.charactersAtico.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.charactersPorteria.sort((a, b) =>
+      a.fullName.localeCompare(b.fullName)
+    );
+    this.charactersVideoclub.sort((a, b) =>
+      a.fullName.localeCompare(b.fullName)
+    );
+    this.characterOtros.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Igual para "Otros"
   }
 
   // Método para actualizar el showCharacter de los personajes
@@ -138,44 +177,6 @@ export class CharactersComponent implements OnInit {
     this.isFilledPorteria = false;
     this.isFilledVideoclub = false;
     this.isFilledOtros = false;
-  }
-
-  // Método para obtener los personajes por piso
-  private getCharactersByFloor(): void {
-    this.characters1A = this.characterService.getCharactersByFloorName('1A');
-    this.characters1B = this.characterService.getCharactersByFloorName('1B');
-    this.characters2A = this.characterService.getCharactersByFloorName('2A');
-    this.characters2B = this.characterService.getCharactersByFloorName('2B');
-    this.characters3A = this.characterService.getCharactersByFloorName('3A');
-    this.characters3B = this.characterService.getCharactersByFloorName('3B');
-    this.charactersAtico =
-      this.characterService.getCharactersByFloorName('Atico');
-    this.charactersPorteria =
-      this.characterService.getCharactersByFloorName('Porteria');
-    this.charactersVideoclub =
-      this.characterService.getCharactersByFloorName('Videoclub');
-    this.characterOtros =
-      this.characterService.getCharactersByFloorName('Otros');
-    // Ordenar alfabéticamente por `fullName` después de obtener los personajes
-    this.sortCharactersByFullName();
-  }
-
-  // Método para ordenar los personajes de cada piso alfabéticamente
-  private sortCharactersByFullName(): void {
-    this.characters1A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters1B.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters2A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters2B.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters3A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters3B.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.charactersAtico.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.charactersPorteria.sort((a, b) =>
-      a.fullName.localeCompare(b.fullName)
-    );
-    this.charactersVideoclub.sort((a, b) =>
-      a.fullName.localeCompare(b.fullName)
-    );
-    this.characterOtros.sort((a, b) => a.fullName.localeCompare(b.fullName));
   }
 
   // Método auxiliar para reiniciar los personajes

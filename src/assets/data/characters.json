@@ -255,7 +255,7 @@
     {
       "fullName": "Raquel Garcia",
       "explanation": "Raul, hermana mamen",
-      "posibilyInputs": ["Raquel", "Garcia"],
+      "posibilyInputs": ["Raquel", "Garcia", "Raul"],
       "showCharacter": false
     },
     {

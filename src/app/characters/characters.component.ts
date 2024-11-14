@@ -9,7 +9,10 @@ import { ICharacter } from '../models/character.model';
 })
 export class CharactersComponent implements OnInit {
   totalCharacters: number = 0;
-  charactersByFloor: { [key: string]: number } = {};
+  points: number = 0;
+  foundMatch: boolean = false;
+
+  // Propiedades para los personajes
   characters1A: ICharacter[] = [];
   characters1B: ICharacter[] = [];
   characters2A: ICharacter[] = [];
@@ -20,23 +23,29 @@ export class CharactersComponent implements OnInit {
   charactersPorteria: ICharacter[] = [];
   charactersVideoclub: ICharacter[] = [];
   characterOtros: ICharacter[] = [];
+
+  // Propiedades para saber si la tabla está llena
+  isFilled1A: boolean = false;
+  isFilled1B: boolean = false;
+  isFilled2A: boolean = false;
+  isFilled2B: boolean = false;
+  isFilled3A: boolean = false;
+  isFilled3B: boolean = false;
+  isFilledAtico: boolean = false;
+  isFilledPorteria: boolean = false;
+  isFilledVideoclub: boolean = false;
+  isFilledOtros: boolean = false;
+
   searchTerm: string = ''; // Para almacenar el término de búsqueda
-  foundMatch: boolean = false;
-  points: number = 0;
 
   constructor(private characterService: CharacterService) {}
 
   ngOnInit(): void {
-    // Obtener el número total de personajes
     this.totalCharacters = this.characterService.getTotalCharacters();
-
-    // Llamar al método para obtener los personajes de cada piso
     this.getCharactersByFloor();
   }
 
-  /**
-   * Método para obtener los personajes por piso
-   */
+  // Método para obtener los personajes por piso
   private getCharactersByFloor(): void {
     this.characters1A = this.characterService.getCharactersByFloorName('1A');
     this.characters1B = this.characterService.getCharactersByFloorName('1B');
@@ -45,35 +54,72 @@ export class CharactersComponent implements OnInit {
     this.characters3A = this.characterService.getCharactersByFloorName('3A');
     this.characters3B = this.characterService.getCharactersByFloorName('3B');
     this.charactersAtico =
-      this.characterService.getCharactersByFloorName('atico');
+      this.characterService.getCharactersByFloorName('Atico');
     this.charactersPorteria =
-      this.characterService.getCharactersByFloorName('porteria');
+      this.characterService.getCharactersByFloorName('Porteria');
     this.charactersVideoclub =
-      this.characterService.getCharactersByFloorName('videoclub');
+      this.characterService.getCharactersByFloorName('Videoclub');
     this.characterOtros =
-      this.characterService.getCharactersByFloorName('otros');
+      this.characterService.getCharactersByFloorName('Otros');
   }
 
-  /**
-   * Método para actualizar el showCharacter de los personajes
-   * basándonos en el término de búsqueda.
-   */
+  // Método para actualizar el showCharacter de los personajes
   searchCharacters(): void {
     const searchTermLower = this.searchTerm.toLowerCase();
 
     if (!searchTermLower) return;
 
     // Filtrar los personajes por piso y actualizar `showCharacter`
-    this.updateCharacterVisibility(this.characters1A, searchTermLower);
-    this.updateCharacterVisibility(this.characters1B, searchTermLower);
-    this.updateCharacterVisibility(this.characters2A, searchTermLower);
-    this.updateCharacterVisibility(this.characters2B, searchTermLower);
-    this.updateCharacterVisibility(this.characters3A, searchTermLower);
-    this.updateCharacterVisibility(this.characters3B, searchTermLower);
-    this.updateCharacterVisibility(this.charactersAtico, searchTermLower);
-    this.updateCharacterVisibility(this.charactersPorteria, searchTermLower);
-    this.updateCharacterVisibility(this.charactersVideoclub, searchTermLower);
-    this.updateCharacterVisibility(this.characterOtros, searchTermLower);
+    this.updateCharacterVisibility(
+      this.characters1A,
+      searchTermLower,
+      'isFilled1A'
+    );
+    this.updateCharacterVisibility(
+      this.characters1B,
+      searchTermLower,
+      'isFilled1B'
+    );
+    this.updateCharacterVisibility(
+      this.characters2A,
+      searchTermLower,
+      'isFilled2A'
+    );
+    this.updateCharacterVisibility(
+      this.characters2B,
+      searchTermLower,
+      'isFilled2B'
+    );
+    this.updateCharacterVisibility(
+      this.characters3A,
+      searchTermLower,
+      'isFilled3A'
+    );
+    this.updateCharacterVisibility(
+      this.characters3B,
+      searchTermLower,
+      'isFilled3B'
+    );
+    this.updateCharacterVisibility(
+      this.charactersAtico,
+      searchTermLower,
+      'isFilledAtico'
+    );
+    this.updateCharacterVisibility(
+      this.charactersPorteria,
+      searchTermLower,
+      'isFilledPorteria'
+    );
+    this.updateCharacterVisibility(
+      this.charactersVideoclub,
+      searchTermLower,
+      'isFilledVideoclub'
+    );
+    this.updateCharacterVisibility(
+      this.characterOtros,
+      searchTermLower,
+      'isFilledOtros'
+    );
 
     if (this.foundMatch) {
       this.searchTerm = '';
@@ -81,19 +127,16 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  /**
-   * Método para actualizar el atributo `showCharacter` de cada personaje
-   * basado en la coincidencia con el término de búsqueda.
-   */
+  // Método para actualizar el showCharacter de cada personaje
   private updateCharacterVisibility(
     characters: ICharacter[],
-    searchTerm: string
+    searchTerm: string,
+    tableFilled: string
   ): void {
     characters.forEach((character) => {
       if (character.showCharacter === false) {
-        // Solo cambiar si no se ha establecido previamente
         const matchFound = character.posibilyInputs.some(
-          (input) => input.toLowerCase() === searchTerm // Exact match with the search term
+          (input) => input.toLowerCase() === searchTerm
         );
         if (matchFound) {
           character.showCharacter = true;
@@ -102,5 +145,10 @@ export class CharactersComponent implements OnInit {
         }
       }
     });
+
+    // Cuando todos los personajes de una tabla se muestran, marcamos la tabla como llena
+    if (characters.every((character) => character.showCharacter)) {
+      (this as any)[tableFilled] = true; // Cambiar el estado de la tabla a "llena"
+    }
   }
 }

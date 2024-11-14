@@ -1,21 +1,23 @@
 <div class="characters-container">
   <!-- Input de búsqueda centrado -->
-  <div class="d-flex justify-content-center mb-3">
-    <input
-      type="text"
-      class="form-control w-50"
-      placeholder="Buscar personajes..."
-      [(ngModel)]="searchTerm"
-      (input)="searchCharacters()"
-    />
-    <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
+  <div class="d-flex justify-content-center align-items-center mb-3">
+    <div class="d-flex align-items-center">
+      <input
+        type="text"
+        class="form-control w-75"
+        placeholder="Buscar personajes..."
+        [(ngModel)]="searchTerm"
+        (input)="searchCharacters()"
+      />
+      <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
+    </div>
   </div>
 
   <!-- Filas con las tablas -->
   <div class="row">
     <!-- Fila 1: 4 tablas -->
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled1A }">
         <thead>
           <tr>
             <th>1A</th>
@@ -37,7 +39,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled1B }">
         <thead>
           <tr>
             <th>1B</th>
@@ -59,7 +61,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled2A }">
         <thead>
           <tr>
             <th>2A</th>
@@ -81,7 +83,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled2B }">
         <thead>
           <tr>
             <th>2B</th>
@@ -107,7 +109,7 @@
   <div class="row">
     <!-- Fila 2: 4 tablas -->
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled3A }">
         <thead>
           <tr>
             <th>3A</th>
@@ -129,7 +131,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilled3B }">
         <thead>
           <tr>
             <th>3B</th>
@@ -151,7 +153,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilledAtico }">
         <thead>
           <tr>
             <th>Atico</th>
@@ -173,7 +175,7 @@
       </table>
     </div>
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilledVideoclub }">
         <thead>
           <tr>
             <th>Videoclub</th>
@@ -199,7 +201,7 @@
   <div class="row">
     <!-- Fila 3: 2 tablas -->
     <div class="col-3">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilledPorteria }">
         <thead>
           <tr>
             <th>Porteria</th>
@@ -221,7 +223,7 @@
       </table>
     </div>
     <div class="col-6">
-      <table class="table">
+      <table class="table" [ngClass]="{ 'table-success': isFilledOtros }">
         <thead>
           <tr>
             <th>Otros</th>

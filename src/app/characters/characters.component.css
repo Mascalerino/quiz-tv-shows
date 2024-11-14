@@ -16,6 +16,12 @@ th {
   animation: highlightEffect 1s ease-in-out; /* Animación de cambio de color */
 }
 
+/* Cambio de color para tablas llenas */
+.table-success {
+  background-color: #d4edda !important; /* Verde claro */
+  transition: background-color 0.5s ease-in-out;
+}
+
 @keyframes highlightEffect {
   0% {
     background-color: #d4edda;

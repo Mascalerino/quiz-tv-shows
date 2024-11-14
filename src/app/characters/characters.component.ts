@@ -8,6 +8,7 @@ import { ICharacter } from '../models/character.model';
   styleUrls: ['./characters.component.css'],
 })
 export class CharactersComponent implements OnInit {
+  //#region variables
   totalCharacters: number = 0;
   points: number = 0;
   foundMatch: boolean = false;
@@ -16,13 +17,13 @@ export class CharactersComponent implements OnInit {
   characters1A: ICharacter[] = [];
   characters1B: ICharacter[] = [];
   characters2A: ICharacter[] = [];
-  characters2B: ICharacter[] = []; // Ya no dividimos en columnas, esta es una sola lista
+  characters2B: ICharacter[] = [];
   characters3A: ICharacter[] = [];
   characters3B: ICharacter[] = [];
   charactersAtico: ICharacter[] = [];
   charactersPorteria: ICharacter[] = [];
   charactersVideoclub: ICharacter[] = [];
-  characterOtros: ICharacter[] = []; // Igual para "Otros", es una sola lista
+  characterOtros: ICharacter[] = [];
 
   // Propiedades para saber si la tabla está llena
   isFilled1A: boolean = false;
@@ -38,6 +39,8 @@ export class CharactersComponent implements OnInit {
 
   searchTerm: string = ''; // Para almacenar el término de búsqueda
 
+  //#endregion
+
   constructor(private characterService: CharacterService) {}
 
   ngOnInit(): void {
@@ -45,52 +48,11 @@ export class CharactersComponent implements OnInit {
     this.getCharactersByFloor();
   }
 
-  // Método para obtener los personajes por piso y ordenarlos alfabéticamente
-  private getCharactersByFloor(): void {
-    this.characters1A = this.characterService.getCharactersByFloorName('1A');
-    this.characters1B = this.characterService.getCharactersByFloorName('1B');
-    this.characters2A = this.characterService.getCharactersByFloorName('2A');
-    this.characters2B = this.characterService.getCharactersByFloorName('2B'); // Ya no se divide
-    this.characters3A = this.characterService.getCharactersByFloorName('3A');
-    this.characters3B = this.characterService.getCharactersByFloorName('3B');
-    this.charactersAtico =
-      this.characterService.getCharactersByFloorName('Atico');
-    this.charactersPorteria =
-      this.characterService.getCharactersByFloorName('Porteria');
-    this.charactersVideoclub =
-      this.characterService.getCharactersByFloorName('Videoclub');
-    this.characterOtros =
-      this.characterService.getCharactersByFloorName('Otros'); // Igual para "Otros"
-
-    // Ordenar alfabéticamente por `fullName`
-    this.sortCharactersByFullName();
-  }
-
-  // Método para ordenar los personajes alfabéticamente
-  private sortCharactersByFullName(): void {
-    this.characters1A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters1B.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters2A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters2B.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Esta ya no se divide
-    this.characters3A.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.characters3B.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.charactersAtico.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    this.charactersPorteria.sort((a, b) =>
-      a.fullName.localeCompare(b.fullName)
-    );
-    this.charactersVideoclub.sort((a, b) =>
-      a.fullName.localeCompare(b.fullName)
-    );
-    this.characterOtros.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Igual para "Otros"
-  }
-
-  // Método para actualizar el showCharacter de los personajes
   searchCharacters(): void {
     const searchTermLower = this.searchTerm.toLowerCase();
 
     if (!searchTermLower) return;
 
-    // Filtrar los personajes por piso y actualizar `showCharacter`
     this.updateCharacterVisibility(
       this.characters1A,
       searchTermLower,
@@ -148,7 +110,6 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  // Método para reiniciar el quiz
   resetQuiz(): void {
     this.points = 0; // Resetear el puntaje
     this.searchTerm = ''; // Limpiar el término de búsqueda
@@ -179,14 +140,48 @@ export class CharactersComponent implements OnInit {
     this.isFilledOtros = false;
   }
 
-  // Método auxiliar para reiniciar los personajes
+  private getCharactersByFloor(): void {
+    this.characters1A = this.characterService.getCharactersByFloorName('1A');
+    this.characters1B = this.characterService.getCharactersByFloorName('1B');
+    this.characters2A = this.characterService.getCharactersByFloorName('2A');
+    this.characters2B = this.characterService.getCharactersByFloorName('2B');
+    this.characters3A = this.characterService.getCharactersByFloorName('3A');
+    this.characters3B = this.characterService.getCharactersByFloorName('3B');
+    this.charactersAtico =
+      this.characterService.getCharactersByFloorName('Atico');
+    this.charactersPorteria =
+      this.characterService.getCharactersByFloorName('Porteria');
+    this.charactersVideoclub =
+      this.characterService.getCharactersByFloorName('Videoclub');
+    this.characterOtros =
+      this.characterService.getCharactersByFloorName('Otros');
+
+    this.sortCharactersByFullName();
+  }
+
+  private sortCharactersByFullName(): void {
+    this.characters1A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters1B.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters2A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters2B.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Esta ya no se divide
+    this.characters3A.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.characters3B.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.charactersAtico.sort((a, b) => a.fullName.localeCompare(b.fullName));
+    this.charactersPorteria.sort((a, b) =>
+      a.fullName.localeCompare(b.fullName)
+    );
+    this.charactersVideoclub.sort((a, b) =>
+      a.fullName.localeCompare(b.fullName)
+    );
+    this.characterOtros.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Igual para "Otros"
+  }
+
   private resetCharacterVisibility(characters: ICharacter[]): void {
     characters.forEach((character) => {
       character.showCharacter = false;
     });
   }
 
-  // Método auxiliar para actualizar el showCharacter de cada personaje
   private updateCharacterVisibility(
     characters: ICharacter[],
     searchTerm: string,

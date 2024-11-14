@@ -127,7 +127,45 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  // Método para actualizar el showCharacter de cada personaje
+  // Método para reiniciar el quiz
+  resetQuiz(): void {
+    this.points = 0; // Resetear el puntaje
+    this.searchTerm = ''; // Limpiar el término de búsqueda
+    this.foundMatch = false; // Restablecer la coincidencia encontrada
+
+    // Reiniciar todos los personajes y las tablas
+    this.resetCharacterVisibility(this.characters1A);
+    this.resetCharacterVisibility(this.characters1B);
+    this.resetCharacterVisibility(this.characters2A);
+    this.resetCharacterVisibility(this.characters2B);
+    this.resetCharacterVisibility(this.characters3A);
+    this.resetCharacterVisibility(this.characters3B);
+    this.resetCharacterVisibility(this.charactersAtico);
+    this.resetCharacterVisibility(this.charactersPorteria);
+    this.resetCharacterVisibility(this.charactersVideoclub);
+    this.resetCharacterVisibility(this.characterOtros);
+
+    // Reiniciar el estado de las tablas llenas
+    this.isFilled1A = false;
+    this.isFilled1B = false;
+    this.isFilled2A = false;
+    this.isFilled2B = false;
+    this.isFilled3A = false;
+    this.isFilled3B = false;
+    this.isFilledAtico = false;
+    this.isFilledPorteria = false;
+    this.isFilledVideoclub = false;
+    this.isFilledOtros = false;
+  }
+
+  // Método auxiliar para reiniciar los personajes
+  private resetCharacterVisibility(characters: ICharacter[]): void {
+    characters.forEach((character) => {
+      character.showCharacter = false;
+    });
+  }
+
+  // Método auxiliar para actualizar el showCharacter de cada personaje
   private updateCharacterVisibility(
     characters: ICharacter[],
     searchTerm: string,

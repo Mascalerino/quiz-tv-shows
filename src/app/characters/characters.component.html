@@ -13,9 +13,106 @@
     </div>
   </div>
 
-  <!-- Filas con las tablas -->
   <div class="row">
-    <!-- Fila 1: 4 tablas -->
+    <!-- Atico -->
+    <div class="col-3">
+      <table class="table" [ngClass]="{ 'table-success': isFilledAtico }">
+        <thead>
+          <tr>
+            <th>Atico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let character of charactersAtico">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Videoclub -->
+    <div class="col-3">
+      <table class="table" [ngClass]="{ 'table-success': isFilledVideoclub }">
+        <thead>
+          <tr>
+            <th>Videoclub</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let character of charactersVideoclub">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Porteria -->
+    <div class="col-3">
+      <table class="table" [ngClass]="{ 'table-success': isFilledPorteria }">
+        <thead>
+          <tr>
+            <th>Porteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let character of charactersPorteria">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Piso 1B -->
+    <div class="col-3">
+      <table class="table" [ngClass]="{ 'table-success': isFilled1B }">
+        <thead>
+          <tr>
+            <th>1B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let character of characters1B">
+            <td
+              *ngIf="character.showCharacter"
+              [ngClass]="{ highlight: character.showCharacter }"
+            >
+              <span class="full-name">{{ character.fullName }}</span>
+              <span *ngIf="character.explanation" class="ms-2"
+                >({{ character.explanation }})</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Piso 1A -->
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled1A }">
         <thead>
@@ -39,29 +136,7 @@
       </table>
     </div>
 
-    <div class="col-3">
-      <table class="table" [ngClass]="{ 'table-success': isFilled1B }">
-        <thead>
-          <tr>
-            <th>1B</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let character of characters1B">
-            <td
-              *ngIf="character.showCharacter"
-              [ngClass]="{ highlight: character.showCharacter }"
-            >
-              <span class="full-name">{{ character.fullName }}</span>
-              <span *ngIf="character.explanation" class="ms-2"
-                >({{ character.explanation }})</span
-              >
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
+    <!-- Piso 2A -->
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled2A }">
         <thead>
@@ -86,32 +161,6 @@
     </div>
 
     <div class="col-3">
-      <table class="table" [ngClass]="{ 'table-success': isFilled2B }">
-        <thead>
-          <tr>
-            <th>2B</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let character of characters2B">
-            <td
-              *ngIf="character.showCharacter"
-              [ngClass]="{ highlight: character.showCharacter }"
-            >
-              <span class="full-name">{{ character.fullName }}</span>
-              <span *ngIf="character.explanation" class="ms-2"
-                >({{ character.explanation }})</span
-              >
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="row">
-    <!-- Fila 2: 4 tablas -->
-    <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled3A }">
         <thead>
           <tr>
@@ -134,6 +183,7 @@
       </table>
     </div>
 
+    <!-- Piso 3B -->
     <div class="col-3">
       <table class="table" [ngClass]="{ 'table-success': isFilled3B }">
         <thead>
@@ -156,65 +206,19 @@
         </tbody>
       </table>
     </div>
-
-    <div class="col-3">
-      <table class="table" [ngClass]="{ 'table-success': isFilledAtico }">
-        <thead>
-          <tr>
-            <th>Atico</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let character of charactersAtico">
-            <td
-              *ngIf="character.showCharacter"
-              [ngClass]="{ highlight: character.showCharacter }"
-            >
-              <span class="full-name">{{ character.fullName }}</span>
-              <span *ngIf="character.explanation" class="ms-2"
-                >({{ character.explanation }})</span
-              >
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="col-3">
-      <table class="table" [ngClass]="{ 'table-success': isFilledVideoclub }">
-        <thead>
-          <tr>
-            <th>Videoclub</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let character of charactersVideoclub">
-            <td
-              *ngIf="character.showCharacter"
-              [ngClass]="{ highlight: character.showCharacter }"
-            >
-              <span class="full-name">{{ character.fullName }}</span>
-              <span *ngIf="character.explanation" class="ms-2"
-                >({{ character.explanation }})</span
-              >
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 
   <div class="row">
-    <!-- Fila 3: 2 tablas -->
+    <!-- Piso 2B -->
     <div class="col-3">
-      <table class="table" [ngClass]="{ 'table-success': isFilledPorteria }">
+      <table class="table" [ngClass]="{ 'table-success': isFilled2B }">
         <thead>
           <tr>
-            <th>Porteria</th>
+            <th>2B</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let character of charactersPorteria">
+          <tr *ngFor="let character of characters2B">
             <td
               *ngIf="character.showCharacter"
               [ngClass]="{ highlight: character.showCharacter }"
@@ -229,6 +233,7 @@
       </table>
     </div>
 
+    <!-- Otros -->
     <div class="col-6">
       <table class="table" [ngClass]="{ 'table-success': isFilledOtros }">
         <thead>

@@ -15,7 +15,7 @@
     {
       "fullName": "Isabel Ruiz",
       "explanation": "",
-      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"],
+      "posibilyInputs": ["Isabel", "Ruiz", "Hierbas"],
       "showCharacter": false
     },
     {
@@ -53,7 +53,7 @@
     {
       "fullName": "Beatriz Villarejo",
       "explanation": "",
-      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"],
+      "posibilyInputs": ["Villarejo", "Bea"],
       "showCharacter": false
     },
     {
@@ -77,7 +77,7 @@
     {
       "fullName": "Antonio-Ezequiel Hidalgo",
       "explanation": "",
-      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"],
+      "posibilyInputs": ["Antonio", "Ezequiel", "Hidalgo"],
       "showCharacter": false
     }
   ],
@@ -91,13 +91,13 @@
     {
       "fullName": "Isabel Ruiz",
       "explanation": "",
-      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"],
+      "posibilyInputs": ["Isabel", "Ruiz", "Hierbas"],
       "showCharacter": false
     },
     {
       "fullName": "Jose Miguel Cuesta",
       "explanation": "",
-      "posibilyInputs": ["Jose", "Cuesta", "Josemi"],
+      "posibilyInputs": ["Cuesta", "Josemi"],
       "showCharacter": false
     },
     {
@@ -153,7 +153,7 @@
     {
       "fullName": "Beatriz Villarejo",
       "explanation": "",
-      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"],
+      "posibilyInputs": ["Villarejo", "Bea"],
       "showCharacter": false
     },
     {
@@ -183,7 +183,7 @@
     {
       "fullName": "Isabel Ruiz",
       "explanation": "",
-      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"],
+      "posibilyInputs": ["Isabel", "Ruiz", "Hierbas"],
       "showCharacter": false
     },
     {
@@ -219,7 +219,7 @@
     {
       "fullName": "Antonio-Ezequiel Hidalgo",
       "explanation": "",
-      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"],
+      "posibilyInputs": ["Antonio", "Ezequiel", "Hidalgo"],
       "showCharacter": false
     },
     {
@@ -281,7 +281,7 @@
     {
       "fullName": "Isabel Ruiz",
       "explanation": "",
-      "posibilyInputs": ["Isabel", "Ruiz", "Isa", "Hierbas"],
+      "posibilyInputs": ["Isabel", "Ruiz", "Hierbas"],
       "showCharacter": false
     },
     {
@@ -336,14 +336,14 @@
     },
     {
       "fullName": "Ana",
-      "explanation": "",
+      "explanation": "Inga",
       "posibilyInputs": ["Ana", "Inga"],
       "showCharacter": false
     },
     {
       "fullName": "Beatriz Villarejo",
       "explanation": "",
-      "posibilyInputs": ["Beatriz", "Villarejo", "Bea"],
+      "posibilyInputs": ["Villarejo", "Bea"],
       "showCharacter": false
     },
     {
@@ -373,7 +373,7 @@
     {
       "fullName": "Antonio-Ezequiel Hidalgo",
       "explanation": "",
-      "posibilyInputs": ["Antonio-Ezequiel", "Hidalgo"],
+      "posibilyInputs": ["Antonio", "Ezequiel", "Hidalgo"],
       "showCharacter": false
     },
     {
@@ -506,13 +506,13 @@
     },
     {
       "fullName": "Alfonso Iglesias",
-      "explanation": "periodista huelga de hambre",
+      "explanation": "Periodista huelga de hambre",
       "posibilyInputs": ["Alfonso", "Iglesias"],
       "showCharacter": false
     },
     {
       "fullName": "Amancio",
-      "explanation": "Companero residencia marisa concha",
+      "explanation": "Compañero residencia marisa concha",
       "posibilyInputs": ["Amancio"],
       "showCharacter": false
     },
@@ -542,7 +542,7 @@
     },
     {
       "fullName": "Antonia Martin",
-      "explanation": "madre emilio",
+      "explanation": "Madre emilio",
       "posibilyInputs": ["Antonia", "Martin"],
       "showCharacter": false
     },
@@ -554,31 +554,31 @@
     },
     {
       "fullName": "Antonio Rubio Cortes",
-      "explanation": "marido de concha",
+      "explanation": "Marido de concha",
       "posibilyInputs": ["Antonio", "Rubio", "Cortes"],
       "showCharacter": false
     },
     {
       "fullName": "Antonio alonso",
-      "explanation": "padre roberto",
+      "explanation": "Padre roberto",
       "posibilyInputs": ["Antonio", "alonso"],
       "showCharacter": false
     },
     {
       "fullName": "Arantxa",
-      "explanation": "Companera uni emilio",
+      "explanation": "Compañera uni emilio",
       "posibilyInputs": ["Arantxa"],
       "showCharacter": false
     },
     {
       "fullName": "Arsenio Hurtado",
-      "explanation": "padre paloma",
+      "explanation": "Padre paloma",
       "posibilyInputs": ["Arsenio", "Hurtado"],
       "showCharacter": false
     },
     {
       "fullName": "Arturo Lopez",
-      "explanation": "padre de belen",
+      "explanation": "Padre de belen",
       "posibilyInputs": ["Arturo", "Lopez"],
       "showCharacter": false
     },
@@ -596,7 +596,7 @@
     },
     {
       "fullName": "Benigno Lopera",
-      "explanation": "ex de carmen",
+      "explanation": "Ex de carmen",
       "posibilyInputs": ["Benigno", "Lopera", "Beni"],
       "showCharacter": false
     },
@@ -614,7 +614,7 @@
     },
     {
       "fullName": "Carla",
-      "explanation": "amiga de isabel",
+      "explanation": "Amiga de isabel",
       "posibilyInputs": ["Carla"],
       "showCharacter": false
     },
@@ -632,7 +632,7 @@
     },
     {
       "fullName": "Clara Alvarez",
-      "explanation": "hermana de lucia",
+      "explanation": "Hermana de lucia",
       "posibilyInputs": ["Clara", "Alvarez"],
       "showCharacter": false
     },
@@ -644,14 +644,14 @@
     },
     {
       "fullName": "Consuelo Garcia",
-      "explanation": "madre isabel",
+      "explanation": "Madre isabel",
       "posibilyInputs": ["Consuelo", "Garcia"],
       "showCharacter": false
     },
     {
       "fullName": "Coronel Treviño",
       "explanation": "Padre maria yakubu",
-      "posibilyInputs": ["Coronel", "Trevino"],
+      "posibilyInputs": ["Coronel", "Treviño"],
       "showCharacter": false
     },
     {
@@ -662,7 +662,7 @@
     },
     {
       "fullName": "David",
-      "explanation": "gigolo",
+      "explanation": "Gigolo",
       "posibilyInputs": ["David"],
       "showCharacter": false
     },
@@ -686,13 +686,13 @@
     },
     {
       "fullName": "El Jupa",
-      "explanation": "Nino adopatado mauri",
+      "explanation": "Niño adopatado mauri",
       "posibilyInputs": ["Jupa"],
       "showCharacter": false
     },
     {
       "fullName": "Enrique Navarro",
-      "explanation": "padre fernando",
+      "explanation": "Padre fernando",
       "posibilyInputs": ["Enrique", "Navarro"],
       "showCharacter": false
     },
@@ -716,26 +716,26 @@
     },
     {
       "fullName": "Federico",
-      "explanation": "banquero",
+      "explanation": "Banquero",
       "posibilyInputs": ["Federico", "Banquero"],
       "showCharacter": false
     },
     {
       "fullName": "Fidel",
-      "explanation": "abuelo bea",
+      "explanation": "Abuelo bea",
       "posibilyInputs": ["Fidel"],
       "showCharacter": false
     },
     {
       "fullName": "Gerardo del Campo",
-      "explanation": "el que habla rapido",
+      "explanation": "El que habla rapido",
       "posibilyInputs": ["Gerardo", "Campo", "Calvo", "Rapido"],
       "showCharacter": false
     },
     {
       "fullName": "Gregorio Navarro",
-      "explanation": "administrador",
-      "posibilyInputs": ["Gregorio", "Navarro", "Gregor"],
+      "explanation": "Administrador",
+      "posibilyInputs": ["Navarro", "Gregor"],
       "showCharacter": false
     },
     {
@@ -795,7 +795,7 @@
     {
       "fullName": "Jose Maria",
       "explanation": "El Yonki",
-      "posibilyInputs": ["Jose", "Maria"],
+      "posibilyInputs": ["Jose Maria"],
       "showCharacter": false
     },
     {
@@ -854,13 +854,13 @@
     },
     {
       "fullName": "Maria Treviño",
-      "explanation": "amante yakubu",
+      "explanation": "Amante yakubu",
       "posibilyInputs": ["Maria", "Treviño"],
       "showCharacter": false
     },
     {
       "fullName": "Mark Jeremy",
-      "explanation": "actor porno",
+      "explanation": "Actor porno",
       "posibilyInputs": ["Mark", "Jeremy"],
       "showCharacter": false
     },
@@ -872,7 +872,7 @@
     },
     {
       "fullName": "Mehmet",
-      "explanation": "esposo albanes natalia",
+      "explanation": "Esposo albanes natalia",
       "posibilyInputs": ["Mehmet"],
       "showCharacter": false
     },
@@ -896,13 +896,13 @@
     },
     {
       "fullName": "Mojito",
-      "explanation": "perro",
+      "explanation": "Perro",
       "posibilyInputs": ["Mojito"],
       "showCharacter": false
     },
     {
       "fullName": "Montse Sanchez",
-      "explanation": "madre fernando",
+      "explanation": "Madre fernando",
       "posibilyInputs": ["Montse", "Sanchez"],
       "showCharacter": false
     },
@@ -926,7 +926,7 @@
     },
     {
       "fullName": "Paca",
-      "explanation": "sirvienta padres carmen",
+      "explanation": "Sirvienta padres carmen",
       "posibilyInputs": ["Paca"],
       "showCharacter": false
     },
@@ -986,7 +986,7 @@
     },
     {
       "fullName": "Salva",
-      "explanation": "hermano bea",
+      "explanation": "Hermano bea",
       "posibilyInputs": ["Salva"],
       "showCharacter": false
     },
@@ -998,7 +998,7 @@
     },
     {
       "fullName": "Sauron",
-      "explanation": "perro mauri",
+      "explanation": "Perro mauri",
       "posibilyInputs": ["Sauron"],
       "showCharacter": false
     },
@@ -1016,37 +1016,37 @@
     },
     {
       "fullName": "Teresa Castillo",
-      "explanation": "madre de roberto",
+      "explanation": "Madre de roberto",
       "posibilyInputs": ["Teresa", "Castillo"],
       "showCharacter": false
     },
     {
-      "fullName": "Toni",
-      "explanation": "madre paloma",
-      "posibilyInputs": ["Toni"],
+      "fullName": "Toñi",
+      "explanation": "Madre paloma",
+      "posibilyInputs": ["Toñi"],
       "showCharacter": false
     },
     {
       "fullName": "Valentin",
-      "explanation": "perro vicenta",
+      "explanation": "Perro vicenta",
       "posibilyInputs": ["Valentin"],
       "showCharacter": false
     },
     {
       "fullName": "Versace",
-      "explanation": "conejo mauri",
+      "explanation": "Conejo mauri",
       "posibilyInputs": ["Versace"],
       "showCharacter": false
     },
     {
-      "fullName": "Victoria Pena",
-      "explanation": "madre alicia",
-      "posibilyInputs": ["Victoria", "Pena"],
+      "fullName": "Victoria Peña",
+      "explanation": "Madre alicia",
+      "posibilyInputs": ["Victoria", "Peña"],
       "showCharacter": false
     },
     {
       "fullName": "Yakubu",
-      "explanation": "nigeriano",
+      "explanation": "Nigeriano",
       "posibilyInputs": ["Yakubu"],
       "showCharacter": false
     },
@@ -1058,7 +1058,7 @@
     },
     {
       "fullName": "Yolanda-Pedro",
-      "explanation": "amigo mauri",
+      "explanation": "Amigo mauri",
       "posibilyInputs": ["Yolanda", "Pedro"],
       "showCharacter": false
     }

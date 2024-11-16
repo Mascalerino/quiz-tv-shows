@@ -614,7 +614,7 @@
     },
     {
       "fullName": "Chelo",
-      "explanation": "Secretaria Pedro Penafiel",
+      "explanation": "Secretaria Pedro Peñafiel",
       "posibilyInputs": ["Chelo"],
       "showCharacter": false
     },
@@ -799,8 +799,8 @@
       "showCharacter": false
     },
     {
-      "fullName": "Juanjo Penafiel",
-      "explanation": "Hijo Pedro Penafiel",
+      "fullName": "Juanjo Peñafiel",
+      "explanation": "Hijo Pedro Peñafiel",
       "posibilyInputs": ["Juanjo", "Peñafiel"],
       "showCharacter": false
     },
@@ -949,9 +949,9 @@
       "showCharacter": false
     },
     {
-      "fullName": "Pedro Penafiel",
+      "fullName": "Pedro Peñafiel",
       "explanation": "Ex/marido belen",
-      "posibilyInputs": ["Pedro", "Penafiel"],
+      "posibilyInputs": ["Pedro", "Peñafiel"],
       "showCharacter": false
     },
     {

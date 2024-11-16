@@ -25,6 +25,9 @@ export class CharactersComponent implements OnInit {
   charactersVideoclub: ICharacter[] = [];
   characterOtros: ICharacter[] = [];
 
+  // Propiedad para dividir los personajes de "Otros" en columnas
+  characterOtrosColumns: ICharacter[][] = [];
+
   // Propiedades para saber si la tabla está llena
   isFilled1A: boolean = false;
   isFilled1B: boolean = false;
@@ -46,8 +49,27 @@ export class CharactersComponent implements OnInit {
   ngOnInit(): void {
     this.totalCharacters = this.characterService.getTotalCharacters();
     this.getCharactersByFloor();
+    this.divideOtrosInColumns(); // Divide los personajes de "Otros" en 8 columnas
   }
 
+  // Método para dividir los personajes en columnas
+  private splitIntoColumns(
+    characters: ICharacter[],
+    columns: number
+  ): ICharacter[][] {
+    const result: ICharacter[][] = [];
+    for (let i = 0; i < characters.length; i += columns) {
+      result.push(characters.slice(i, i + columns));
+    }
+    return result;
+  }
+
+  // Llamada al método para dividir los personajes "Otros" en 8 columnas
+  private divideOtrosInColumns(): void {
+    this.characterOtrosColumns = this.splitIntoColumns(this.characterOtros, 5);
+  }
+
+  // Método para buscar personajes basados en el término de búsqueda
   searchCharacters(): void {
     const searchTermLower = this.searchTerm.toLowerCase();
 
@@ -110,6 +132,7 @@ export class CharactersComponent implements OnInit {
     }
   }
 
+  // Método para reiniciar el quiz
   resetQuiz(): void {
     this.points = 0; // Resetear el puntaje
     this.searchTerm = ''; // Limpiar el término de búsqueda
@@ -140,6 +163,7 @@ export class CharactersComponent implements OnInit {
     this.isFilledOtros = false;
   }
 
+  // Método para obtener los personajes de cada piso
   private getCharactersByFloor(): void {
     this.characters1A = this.characterService.getCharactersByFloorName('1A');
     this.characters1B = this.characterService.getCharactersByFloorName('1B');
@@ -159,6 +183,7 @@ export class CharactersComponent implements OnInit {
     this.sortCharactersByFullName();
   }
 
+  // Método para ordenar los personajes por nombre
   private sortCharactersByFullName(): void {
     this.characters1A.sort((a, b) => a.fullName.localeCompare(b.fullName));
     this.characters1B.sort((a, b) => a.fullName.localeCompare(b.fullName));
@@ -176,12 +201,14 @@ export class CharactersComponent implements OnInit {
     this.characterOtros.sort((a, b) => a.fullName.localeCompare(b.fullName)); // Igual para "Otros"
   }
 
+  // Método para resetear la visibilidad de los personajes
   private resetCharacterVisibility(characters: ICharacter[]): void {
     characters.forEach((character) => {
       character.showCharacter = false;
     });
   }
 
+  // Método para actualizar la visibilidad de los personajes al buscar
   private updateCharacterVisibility(
     characters: ICharacter[],
     searchTerm: string,

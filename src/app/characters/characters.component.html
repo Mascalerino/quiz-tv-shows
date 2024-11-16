@@ -249,20 +249,22 @@
       <table class="table" [ngClass]="{ 'table-success': isFilledOtros }">
         <thead>
           <tr>
-            <th>Otros</th>
+            <th colspan="8" class="text-center">Otros</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let character of characterOtros">
-            <td
-              *ngIf="character.showCharacter"
-              [ngClass]="{ highlight: character.showCharacter }"
-            >
-              <span class="full-name">{{ character.fullName }}</span>
-              <span *ngIf="character.explanation" class="ms-2"
-                >({{ character.explanation }})</span
+          <tr *ngFor="let characterRow of characterOtrosColumns">
+            <ng-container *ngFor="let character of characterRow">
+              <td
+                *ngIf="character.showCharacter"
+                [ngClass]="{ highlight: character.showCharacter }"
               >
-            </td>
+                <span class="full-name">{{ character.fullName }}</span>
+                <span *ngIf="character.explanation" class="ms-2">
+                  ({{ character.explanation }})
+                </span>
+              </td>
+            </ng-container>
           </tr>
         </tbody>
       </table>

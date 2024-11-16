@@ -229,21 +229,9 @@
       "showCharacter": false
     },
     {
-      "fullName": "Juan Luis",
-      "explanation": "Cirujano",
-      "posibilyInputs": ["Juan", "Luis"],
-      "showCharacter": false
-    },
-    {
       "fullName": "Moncho Heredia",
       "explanation": "Hijo higinio",
       "posibilyInputs": ["Moncho", "Heredia"],
-      "showCharacter": false
-    },
-    {
-      "fullName": "Rafa",
-      "explanation": "Cirujano",
-      "posibilyInputs": ["Rafa"],
       "showCharacter": false
     },
     {
@@ -406,12 +394,6 @@
       "fullName": "Roberto Alonso",
       "explanation": "",
       "posibilyInputs": ["Roberto", "Alonso", "Pintamonas"],
-      "showCharacter": false
-    },
-    {
-      "fullName": "Beltran Amoros",
-      "explanation": "Parapsicologo",
-      "posibilyInputs": ["Beltran", "Amoros", "Parapsicologo"],
       "showCharacter": false
     }
   ],
@@ -586,6 +568,12 @@
       "fullName": "Beatriz",
       "explanation": "Ex de armando",
       "posibilyInputs": ["Beatriz"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Beltran Amoros",
+      "explanation": "Parapsicologo",
+      "posibilyInputs": ["Beltran", "Amoros", "Parapsicologo"],
       "showCharacter": false
     },
     {
@@ -777,7 +765,7 @@
     {
       "fullName": "Jaime",
       "explanation": "Informatico mauri",
-      "posibilyInputs": ["Jaime", "Cookies"],
+      "posibilyInputs": ["Jaime", "Cookies", "Informatico"],
       "showCharacter": false
     },
     {
@@ -1054,6 +1042,42 @@
       "fullName": "Yolanda-Pedro",
       "explanation": "Amigo mauri",
       "posibilyInputs": ["Yolanda", "Pedro"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Juan Luis",
+      "explanation": "Cirujano",
+      "posibilyInputs": ["Juan", "Luis"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Rafa",
+      "explanation": "Cirujano",
+      "posibilyInputs": ["Rafa"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Ainhoa",
+      "explanation": "Conductora de bus",
+      "posibilyInputs": ["Ainhoa"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Isidro",
+      "explanation": "Mendigo millonario",
+      "posibilyInputs": ["Isidro"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Marcos",
+      "explanation": "Dj Gallumbos",
+      "posibilyInputs": ["Marcos", "Dj", "Gallumbos"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Ricardo",
+      "explanation": "Novio alicia",
+      "posibilyInputs": ["Ricardo"],
       "showCharacter": false
     }
   ]

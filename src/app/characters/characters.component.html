@@ -1,23 +1,4 @@
 <div class="characters-container">
-  <!-- Input de búsqueda centrado -->
-  <div class="d-flex justify-content-center align-items-center mb-3">
-    <div class="d-flex align-items-center">
-      <input
-        type="text"
-        class="form-control w-75"
-        placeholder="Buscar personajes..."
-        [(ngModel)]="searchTerm"
-        (input)="searchCharacters()"
-      />
-      <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
-
-      <!-- Botón para reiniciar el quiz -->
-      <button class="btn btn-danger ms-2 w-100" (click)="resetQuiz()">
-        Reiniciar Quiz
-      </button>
-    </div>
-  </div>
-
   <!-- Primer Contenedor con las tablas (2B y las demás) -->
   <div class="row mb-4">
     <!-- Columna para la tabla 2B -->
@@ -245,6 +226,30 @@
           </table>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Segundo Input de búsqueda encima de la tabla "Otros" -->
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <div class="d-flex align-items-center">
+        <input
+          type="text"
+          class="form-control w-75"
+          placeholder="Buscar personajes..."
+          [(ngModel)]="searchTerm"
+          (input)="searchCharacters()"
+        />
+        <span class="ms-3">{{ points }}/{{ totalCharacters }}</span>
+      </div>
+      <!-- Botón para reiniciar el quiz -->
+      <button class="btn btn-danger ms-2 w-100" (click)="resetQuiz()">
+        Reiniciar Quiz
+      </button>
+      <button class="btn btn-outline-warning ms-2" (click)="giveUp()">
+        <i class="bi bi-hand-thumbs-up"></i>
+        Rendirse
+      </button>
     </div>
   </div>
 

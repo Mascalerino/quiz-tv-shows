@@ -163,6 +163,38 @@ export class CharactersComponent implements OnInit {
     this.isFilledOtros = false;
   }
 
+  giveUp(): void {
+    // Mostrar todos los personajes (establecer `showCharacter` a true)
+    this.showAllCharacters(this.characters1A);
+    this.showAllCharacters(this.characters1B);
+    this.showAllCharacters(this.characters2A);
+    this.showAllCharacters(this.characters2B);
+    this.showAllCharacters(this.characters3A);
+    this.showAllCharacters(this.characters3B);
+    this.showAllCharacters(this.charactersAtico);
+    this.showAllCharacters(this.charactersPorteria);
+    this.showAllCharacters(this.charactersVideoclub);
+    this.showAllCharacters(this.characterOtros);
+
+    // Cambiar el estado de las tablas a "llenas"
+    this.isFilled1A = true;
+    this.isFilled1B = true;
+    this.isFilled2A = true;
+    this.isFilled2B = true;
+    this.isFilled3A = true;
+    this.isFilled3B = true;
+    this.isFilledAtico = true;
+    this.isFilledPorteria = true;
+    this.isFilledVideoclub = true;
+    this.isFilledOtros = true;
+  }
+
+  private showAllCharacters(characters: ICharacter[]): void {
+    characters.forEach((character) => {
+      character.showCharacter = true;
+    });
+  }
+
   // Método para obtener los personajes de cada piso
   private getCharactersByFloor(): void {
     this.characters1A = this.characterService.getCharactersByFloorName('1A');

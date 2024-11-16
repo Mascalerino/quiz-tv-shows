@@ -37,12 +37,6 @@
       "showCharacter": false
     },
     {
-      "fullName": "Natalia Cuesta",
-      "explanation": "",
-      "posibilyInputs": ["Natalia", "Cuesta"],
-      "showCharacter": false
-    },
-    {
       "fullName": "Vicenta Benito",
       "explanation": "",
       "posibilyInputs": ["Vicenta", "Benito"],
@@ -315,15 +309,15 @@
       "showCharacter": false
     },
     {
-      "fullName": "Yago",
-      "explanation": "",
-      "posibilyInputs": ["Yago"],
+      "fullName": "Yamiley Cuesta",
+      "explanation": "Hija natalia",
+      "posibilyInputs": ["Yamiley", "Cuesta"],
       "showCharacter": false
     },
     {
-      "fullName": "Ciriaco Canovas",
-      "explanation": "anterior propietario del 3A",
-      "posibilyInputs": ["Ciriaco", "Canovas"],
+      "fullName": "Yago",
+      "explanation": "",
+      "posibilyInputs": ["Yago"],
       "showCharacter": false
     }
   ],
@@ -628,6 +622,12 @@
       "fullName": "Chinua",
       "explanation": "Esposa Yakubu",
       "posibilyInputs": ["Chinua"],
+      "showCharacter": false
+    },
+    {
+      "fullName": "Ciriaco Canovas",
+      "explanation": "anterior propietario del 3A",
+      "posibilyInputs": ["Ciriaco", "Canovas"],
       "showCharacter": false
     },
     {
@@ -1048,12 +1048,6 @@
       "fullName": "Yakubu",
       "explanation": "Nigeriano",
       "posibilyInputs": ["Yakubu"],
-      "showCharacter": false
-    },
-    {
-      "fullName": "Yamiley Cuesta",
-      "explanation": "Hija natalia",
-      "posibilyInputs": ["Yamiley", "Cuesta"],
       "showCharacter": false
     },
     {

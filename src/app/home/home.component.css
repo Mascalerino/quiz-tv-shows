@@ -6,42 +6,27 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  position: relative; /* Necesario para posicionar los elementos encima */
-  background-image: url("/assets/img/fondo.jpg"); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
-}
-
-/* Capa difusa solo sobre la imagen de fondo */
-.background-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit; /* Usa la misma imagen de fondo */
+  background-image: url("/anhqv/assets/img/fondo.jpg"); /* Ruta corregida */
   background-size: cover;
   background-position: center;
-  filter: blur(8px); /* Aplica un desenfoque más fuerte */
-  z-index: -1; /* Asegura que la capa difusa quede debajo del contenido */
+  position: relative; /* Necesario para posicionar los elementos encima */
 }
 
 /* Título centrado arriba */
 h1 {
   position: absolute;
-  top: 20px; /* Separación mínima desde la parte superior */
-  font-size: 3rem;
-  color: white; /* Color blanco para mejorar la visibilidad sobre el fondo difuso */
+  top: 10px;
+  font-size: 2.5rem;
+  color: #ffffff;
   text-align: center;
   margin: 0;
-  z-index: 1; /* Asegura que el título esté encima de la imagen */
+  z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra para mejorar la legibilidad */
 }
 
 /* Botón centrado en el medio */
 .btn-personajes {
-  font-size: 1.5rem; /* Ajusta el tamaño de la fuente del botón */
+  font-size: 1.5rem;
   padding: 15px 30px;
   z-index: 1; /* Asegura que el botón esté encima de la imagen */
   background-color: rgba(0, 123, 255, 0.7); /* Color de fondo del botón */
@@ -57,5 +42,5 @@ h1 {
     123,
     255,
     1
-  ); /* Cambio de color cuando el ratón pasa sobre el botón */
+  ); /* Color del fondo del botón al pasar el ratón */
 }
